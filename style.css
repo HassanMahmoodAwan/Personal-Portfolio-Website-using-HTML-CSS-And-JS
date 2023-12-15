@@ -1,0 +1,111 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== GLOBAL CLASSES ====== */
+li{
+    list-style: none;
+}
+
+body{
+    background-color: #f0f0f1;
+    color: rgb(36, 36, 36);
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+}
+.active{
+    font-weight: bold;
+}
+
+
+/* ===== Local CLASSES ====== */
+
+
+/* === NAVBAR === */
+.Navbar {
+    background-color: #1e293b;
+    color: #f0f0f1;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    padding: 5px 20px;
+
+}
+
+/* NAVBAR: == LOGO == */
+.logo-container, .chat-dark{
+    display: flex;
+    align-items: center;
+}
+.logo-container h3{
+    margin-left: 5px;
+}
+
+/* NAVBAR: == LIST == */
+.nav-list ul{
+    display: flex;
+    height:100%;
+    align-items: center;
+}
+.nav-list ul li{
+    padding: 0 10px 0 10px;
+}
+
+
+/* NAVBAR: == Chat and Dark == */
+.dark, .chat{
+    border: 1px solid #194e5c;
+    border-radius: 10px;
+    height: 35px;
+    margin: 0 10px;
+    padding: 5px 20px;
+    font-weight: bold;
+    background-color: #00c6ff;
+    color: #1e293b;
+}
+
+
+
+/*  ========== HERO SECTION ============ */
+.hero{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #1e293b;
+    display: flex;
+}
+.hero .left-part{
+    margin-top: 50px;
+    min-width: 50%;
+}
+.hero .left-part h3{
+    color: #00c6ff;
+}
+
+/* ====Hero: Right Part ===== */
+.hero .right-part{
+    min-width: 50%;
+}
+
+
+
+/* ================= SKILL SECTION ================ */
+.skill{
+    background-color: #f2f4ff;
+    height: 440px;
+}
+.skill div p{
+    color: #00c6ff;
+}
+.skill .left-skill,
+.skill .right-skill{
+    min-width: 50%;
+    padding-left: 40px;
+    padding-right: 120px;
+}
