@@ -16,7 +16,7 @@ li{
 
 body{
     background-color: #f0f0f1;
-    color: rgb(36, 36, 36);
+    color: #1e293b;
     /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-family: 'Poppins', sans-serif;
 }
@@ -25,56 +25,60 @@ body{
 }
 
 
+
+
+
 /* ===== Local CLASSES ====== */
 
 
 /* === NAVBAR === */
 .Navbar {
-    /* background-color: #1e293b; */
-    background-color: #f2f4ff;
-    /* color: #f0f0f1; */
+    background-color: #f0f0f1;
     color: #1e293b;
-    display: flex;
-    height: 60px;
-    justify-content: space-between;
+    height: 65px;
     padding: 5px 20px;
 
     position: sticky;
     top: 0;
     opacity: 80%;
 
+    box-shadow: 1px 1px 10px 1px #d8d8d8;
+
+}.Navbar:hover{
+    opacity: 100%;
 }
 
 /* NAVBAR: == LOGO == */
-.logo-container, .chat-dark{
-    display: flex;
-    align-items: center;
+.logo-container{
+    width: 170px;
+    height: 50px;
 }
-.logo-container h3{
-    margin-left: 5px;
+.logo-heading{
+    padding-top: 3px;
+    height: 40px;
 }
 
 /* NAVBAR: == LIST == */
-.nav-list ul{
-    display: flex;
-    height:100%;
-    align-items: center;
-}
 .nav-list ul li{
     padding: 0 10px 0 10px;
 }
 
 
 /* NAVBAR: == Chat and Dark == */
-.dark, .chat{
-    border: 1px solid #194e5c;
-    border-radius: 10px;
-    height: 35px;
-    margin: 0 10px;
-    padding: 5px 20px;
-    font-weight: bold;
-    background-color: #00c6ff;
-    color: #1e293b;
+.dark-mode{
+    background-color: #3d70c1;
+    opacity: 60%;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+
+}
+.dark-mode:hover{
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
+}
+.dark-mode-icon{
+    color: black;
+    font-size: 18px;
 }
 
 
@@ -83,8 +87,6 @@ body{
 .hero{
     margin-top: 30px;
     margin-bottom: 30px;
-    color: #1e293b;
-    display: flex;
 }
 .hero .left-part{
     margin-top: 50px;
@@ -94,9 +96,11 @@ body{
     color: #00c6ff;
 }
 
-/* ====Hero: Right Part ===== */
 .hero .right-part{
     min-width: 50%;
+}
+.bxs-down-arrow-circle{
+    font-size: 20px;
 }
 
 
@@ -107,6 +111,8 @@ body{
 .skill{
     background-color: #f2f4ff;
     height: 440px;
+    box-shadow: 1px 1px 10px 1px #d8d8d8;
+
 }
 .skill div p{
     color: #00c6ff;
