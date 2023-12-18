@@ -33,11 +33,15 @@ body{
     /* background-color: #1e293b; */
     background-color: #f2f4ff;
     /* color: #f0f0f1; */
-    color: #1e293b;;
+    color: #1e293b;
     display: flex;
     height: 60px;
     justify-content: space-between;
     padding: 5px 20px;
+
+    position: sticky;
+    top: 0;
+    opacity: 80%;
 
 }
 
