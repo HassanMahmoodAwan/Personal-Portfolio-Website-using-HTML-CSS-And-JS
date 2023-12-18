@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
+    <!-- ===== BOX Icons =======  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- ====== Script Files ======= -->
     <script src="./script.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
@@ -61,10 +64,44 @@
             </div>
 
             <div class="right-part d-flex justify-content-end">
-                <img src="./public/Hero-Section Image.png" alt="Hassan Image" width="420" height="420">
+                <img src="./public/Hero-Section Image.png" alt="Hassan Image" width="420" height="420" class="hero-image">
             </div>
         </section>
         <!-- ======= END HERO SECTION ======== -->
+
+        <!--  ====== ABOUT ME ======= -->
+        <section id="about_me" class="w-full d-flex justify-content-center">
+            <div id="about-container" class='my-5 d-flex justify-content-between'>
+               <!-- ===== LEFT SIDE ===== -->
+               <div class="pt-3">
+                   <img src="./public/Profile Picture about me section.jpeg" alt="profile-pic" width="270" height="320" class="image">
+               </div>
+               <!-- ====== Right Side ======= -->
+               <div id="right-side_aboutme" class="">
+                    <p class="m-0 intro-p">My Intro</p>
+                    <h4 class="mt-0">About Me</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, nam vitae molestiae dicta ratione ipsa dignissimos alias, non reiciendis excepturi ipsam neque! Corporis, harum ut.</p>
+
+                    <!-- ==== Contact Details ===== -->
+                    <div class="py-2">
+                        <h6 class="pt-2"> <i class='bx bxs-user text-primary'></i>  Name &nbsp; &nbsp;: &nbsp; &nbsp; &nbsp; Hassan Mahmood </h6>
+                        <h6 class="pt-2"> <i class='bx bxs-phone text-primary'></i> Phone&nbsp; &nbsp;: &nbsp; &nbsp; &nbsp; 0309-4644191 </h6>
+                        <h6 class="py-2"> <i class='bx bx-envelope text-primary'></i> Email &nbsp; &nbsp; : &nbsp; &nbsp; &nbsp; HassanMahmudAwan@gmail.com </h6>
+                    </div>
+
+                    <h5 class="pt-2">My Interest</h5>
+                    <div class="d-flex justify-content-between">
+                        <p> <i class='bx bxs-book-open text-primary'></i> Book Reading</p>
+                        <p> <i class='bx bx-search-alt-2 text-primary'></i> Badminton</p>
+                        <p> <i class='bx bx-globe text-primary'></i> GeoPolitics</p>
+                        <p> <i class='bx bx-cricket-ball text-primary'></i> Cricket</p>
+                    </div>
+
+               </div>
+            </div>
+        </section>
+
+
 
         <!-- ======= Skill SECTION ======== -->
         <Section class="skill container rounded-4 py-5">
@@ -143,8 +180,11 @@
                 </div>
                 <!-- == END OF RIGHT SIDE == -->
             </div>
-            <!-- === END Skill PART === -->
+           
         </Section>
+         <!-- === END Skill PART === -->
+
+         <!-- ====  -->
 
 
     </div>

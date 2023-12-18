@@ -30,8 +30,10 @@ body{
 
 /* === NAVBAR === */
 .Navbar {
-    background-color: #1e293b;
-    color: #f0f0f1;
+    /* background-color: #1e293b; */
+    background-color: #f2f4ff;
+    /* color: #f0f0f1; */
+    color: #1e293b;;
     display: flex;
     height: 60px;
     justify-content: space-between;
@@ -95,6 +97,8 @@ body{
 
 
 
+
+
 /* ================= SKILL SECTION ================ */
 .skill{
     background-color: #f2f4ff;
@@ -108,4 +112,27 @@ body{
     min-width: 50%;
     padding-left: 40px;
     padding-right: 120px;
+}
+
+
+
+/* ================= ABOUT ME SECTION ================ */
+#about_me{
+    height: 500px;
+    margin-bottom: 80px;
+}
+#about-container{
+    width:65%;
+}
+#right-side_aboutme{
+    width: 60%
+}
+#right-side_aboutme .intro-p{
+    color: #00c6ff;
+}
+.image{
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    padding: 15px;
+    /* box-shadow: 1px 1px 10px 1px rgb(237, 249, 253) */
 }
