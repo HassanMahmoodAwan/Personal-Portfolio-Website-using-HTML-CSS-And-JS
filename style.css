@@ -85,8 +85,9 @@ body{
 
 /*  ========== HERO SECTION ============ */
 .hero{
-    margin-top: 30px;
+    padding-top: 30px;
     margin-bottom: 30px;
+    background-color: #e4e6e6;
 }
 .hero .left-part{
     margin-top: 50px;
@@ -145,4 +146,30 @@ body{
     border-bottom: 2px solid blue;
     padding: 15px;
     /* box-shadow: 1px 1px 10px 1px rgb(237, 249, 253) */
+}
+
+
+
+/*  ========= CAREER SECTION ============ */
+.career{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.career-container{
+    margin-top: 50px;
+}
+
+#heading{
+    width: 37%;
+}#edu-heading{
+    width: 34%;
+}
+.bxs-briefcase, .bxs-book-reader{
+    font-size: 24px;
+}
+
+
+
+.checker{
+    height: 300px;
 }
