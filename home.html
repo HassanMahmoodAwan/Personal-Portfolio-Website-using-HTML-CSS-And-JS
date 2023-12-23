@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <!-- === BOOTSTRAP === -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
     <!-- ===BOX Icons ===  -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ===== Font Awsome ======= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <!-- ====== SCRIPT Files ======= -->
@@ -26,93 +29,91 @@
 <body>
     <div class="Container">
 
-        <!-- === Navbar === -->
+        <!-- === Navbar SECTION === -->
         <section class="Navbar d-flex justify-content-between">
             
-            <div class="logo-container d-flex align-items-center justify-content-between">
-                <!-- === LOGO === -->
-                <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47.5 47.5" id="H" width="40px" height="40px"><defs><clipPath id="a"><path d="M0 38h38V0H0v38Z" fill="#1e293b" class="color000000 svgShape"></path></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.25 0 0 -1.25 0 47.5)" fill="#1e293b" class="color000000 svgShape"><path fill="#00c6ff" d="M37 5a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v28a4 4 0 0 0 4 4h28a4 4 0 0 0 4-4V5Z" class="color3b88c3 svgShape"></path><path fill="#1e293b" d="M26.5 30a2.5 2.5 0 0 1-2.5-2.5V22H14v5.5a2.5 2.5 0 1 1-5 0v-17a2.5 2.5 0 1 1 5 0V17h10v-6.5a2.5 2.5 0 1 1 5 0v17a2.5 2.5 0 0 1-2.5 2.5" class="colorffffff svgShape"></path></g></svg>
-                </div>
-
-                <div class="logo-heading">
-                    <h3 class="d-flex align-items-end">Hassan.M</h3>
-                </div>
+            <!-- === LOGO & Name === -->
+            <div class="h-100 d-flex align-items-center justify-content-between">
+                    <i class="fa-brands fa-houzz text-info icon-size"></i>
+                    <h3 class="ms-2 mb-0 pt-1">Hassan.<span class="text-info mx-0">M</span></h3>
             </div>
 
-            <div class="nav-list ">
+            <!-- === NAV List -->
+            <div>
                 <ul class="d-flex align-items-center h-100">
-                    <li class="active">Home</li>
-                    <li>About me </li>
-                    <li>Services</li>
-                    <li>Resume</li>
-                    <li>Blog</li>
-                    <li>Contact me</li>
-                </ul>
-            </div>
-            
-
-            <!--  Dark Button with chat button -->
-            <div class="d-flex align-items-center ">
-                <div class=" dark-mode d-flex align-items-center justify-content-center">
-                    <i class='bx bxs-moon dark-mode-icon'></i>
+                    <li class="px-3"><a href="#" class="text-info">About me</a></li>
+                    <li class="px-3"><a href="#">Skills</a></li>
+                    <li class="px-3"><a href="#">Projects</a></li>
+                    <li class="px-3"><a href="#">Services</a></li>
+                    <li class="px-3"><a href="#">Contact me</a></li>
+                 </ul>           
+            </div>        
+    
+           <!--  Dark Button with chat button -->
+            <div class="d-flex align-items-center">
+                <div class="dark-mode d-flex align-items-center justify-content-center bg-info">
+                    <i class='bx bxs-moon text-dark icon-size-small'></i>
                 </div>
-                <button class="btn btn-success mx-3">Chat with me</button>
+                <button class="btn btn-success mx-3 pt-0">
+                        <i class='bx bxl-whatsapp text-dark icon-size icon-setting'></i>Chat with me
+                </button>      
             </div>
 
         </section>
         <!-- === End Navbar === -->
 
         <!-- ======= HERO SECTION ======== -->
-        <div class=" hero">
-
         
-        <section class="d-flex container">
-
-            <div class="left-part ">
-                <h3>Hi, I am</h3>
+        <section class="d-flex container hero">
+            <!-- == Left Part -->
+            <div class="w-50 left-margin">
+                <h6 class="text-info">Hi, I am</h6>
                 <h1>Hassan Mahmood</h1>
-                <h5>Full Stack Web Developer !</h5>
-                <p class="mt-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum eius id vitae, ratione facilis accusantium temporibus ullam totam ipsam, rem veritatis possimus! Explicabo quibusdam assumenda impedit illo animi reiciendis repudiandae.</p>
+                <h5 class="text-grey">Full stack Developer !</h5>
+                <p class="mt-5 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum eius id vitae, ratione facilis accusantium temporibus ullam totam ipsam, rem veritatis possimus! Explicabo quibusdam assumenda impedit illo animi reiciendis repudiandae.</p>
 
-                <button class="btn btn-primary rounded-pill px-3">
-                    <i class='bx bxs-down-arrow-circle text-info px-1'></i> Resume</button>
+                <button class="btn btn-primary rounded-pill pt-1">
+                    <i class='bx bxs-down-arrow-circle text-info icon-size-small icon-setting'></i>Resume</button>
                 <button class="btn btn-outline-primary rounded-pill"> Contact Me </button>
             </div>
 
-            <div class="right-part d-flex justify-content-end">
-                <img src="./public/Hero-Section Image.png" alt="Hassan Image" width="420" height="420" class="hero-image">
+            <!-- === RIGHT PART === -->
+            <div class="d-flex justify-content-end w-50">
+                <img src="./public/Hero Section 03.png" alt="Hassan Image" width="400" height="320" class=" mt-5 pt-3">
             </div>
         </section>
-        </div>
         <!-- ======= END HERO SECTION ======== -->
 
+
+
         <!--  ====== ABOUT ME ======= -->
-        <section id="about_me" class="w-full d-flex justify-content-center">
+        <section id="about_me" class="w-full d-flex justify-content-center bg-grey">
             <div id="about-container" class='my-5 d-flex justify-content-between'>
+
                <!-- ===== LEFT SIDE ===== -->
                <div class="pt-3">
-                   <img src="./public/Profile Picture about me section.jpeg" alt="profile-pic" width="270" height="320" class="image">
+                   <img src="./public/Profile Picture about me section.jpeg" alt="profile-pic" width="270" height="337" class="image">
                </div>
+
                <!-- ====== Right Side ======= -->
-               <div id="right-side_aboutme" class="">
-                    <p class="m-0 intro-p">My Intro</p>
+               <div id="right-side_aboutme">
+                    <p class="m-0 text-info"> <small>My Intro</small></p>
                     <h4 class="mt-0">About Me</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, nam vitae molestiae dicta ratione ipsa dignissimos alias, non reiciendis excepturi ipsam neque! Corporis, harum ut.</p>
+                    <p class="text-secondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, nam vitae molestiae dicta ratione ipsa dignissimos alias, non reiciendis excepturi ipsam neque! Corporis, harum ut.</p>
 
                     <!-- ==== Contact Details ===== -->
                     <div class="py-2">
-                        <h6 class="pt-2"> <i class='bx bxs-user text-primary'></i>  Name &nbsp; &nbsp;: &nbsp; &nbsp; &nbsp; Hassan Mahmood </h6>
-                        <h6 class="pt-2"> <i class='bx bxs-phone text-primary'></i> Phone&nbsp; &nbsp;: &nbsp; &nbsp; &nbsp; 0309-4644191 </h6>
-                        <h6 class="py-2"> <i class='bx bx-envelope text-primary'></i> Email &nbsp; &nbsp; : &nbsp; &nbsp; &nbsp; HassanMahmudAwan@gmail.com </h6>
+                        <h6 class="pt-2"> <i class='bx bxs-user text-info'></i>  Name &nbsp; &nbsp;: &nbsp; &nbsp; &nbsp; <span class='text-grey'>Hassan Mahmood</span> </h6>
+                        <h6 class="pt-2"> <i class='bx bxs-phone text-info'></i> Phone&nbsp; &nbsp;: &nbsp; &nbsp; &nbsp; <span class='text-grey'>0309-4644191</span> </h6>
+                        <h6 class="py-2"> <i class='bx bx-envelope text-info'></i> Email &nbsp;  : &nbsp; &nbsp; &nbsp; <span class='text-grey'>HassanMahmudAwan@gmail.com</span> </h6>
                     </div>
 
                     <h5 class="pt-2">My Interest</h5>
                     <div class="d-flex justify-content-between">
-                        <p> <i class='bx bxs-book-open text-primary'></i> Book Reading</p>
-                        <p> <i class='bx bx-search-alt-2 text-primary'></i> Badminton</p>
-                        <p> <i class='bx bx-globe text-primary'></i> GeoPolitics</p>
-                        <p> <i class='bx bx-cricket-ball text-primary'></i> Cricket</p>
+                        <p class="mx-1 text-grey"> <i class='bx bxs-book-open text-info mx-0'></i> Book Reading</p>
+                        <p class="mx-1 text-grey"> <i class='bx bx-search-alt-2 text-info'></i> Badminton</p>
+                        <p class="mx-1 text-grey"> <i class='bx bx-globe text-info'></i> GeoPolitics</p>
+                        <!-- <p class="mx-1"> <i class='bx bx-cricket-ball text-primary'></i> Cricket</p> -->
                     </div>
 
                </div>
@@ -125,40 +126,47 @@
         <Section class="skill container rounded-4 py-5">
             
             <div class="text-center">
-                <p class="mb-0">Why Choose me</p>
+                <p class="mb-0 text-info">Why Choose me</p>
                 <h3>My Expertise Area</h3>
             </div>
 
-            <div class="d-flex container h-100 align-items-center  skill-parts">
+            <div class="d-flex container h-100 align-items-center pb-5 text-grey">
 
                 <!-- == LEFT SIDE ==  -->
                 <div class="left-skill">
 
                     <div id="skill-01" class="mb-3">
-                        <h5>Python</h5>
+                        <h5>HTML & CSS</h5>
                         <div class="progress">
-                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
                     <div id="skill-02" class="mb-3">
-                        <h5>Python</h5>
+                        <h5>JavaScript & JQuery</h5>
                         <div class="progress ">
-                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar w-25" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
                     <div id="skill-03" class="mb-3">
                         <h5>Python</h5>
                         <div class="progress ">
-                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <div id="skill-03" class="mb-3">
+                        <h5>OOP</h5>
+                        <div class="progress ">
+                            <div class="progress-bar w-100" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
                     <div id="skill-04">
-                        <h5>Python</h5>
+                        <h5>DSA</h5>
                         <div class="progress">
-                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar w-25" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     
@@ -168,30 +176,38 @@
                 <!-- === RIGHT SIDE === -->
                 <div class="right-skill">
                     <div id="skill-05 " class="mb-3">
-                        <h5>Python</h5>
+                        <h5>Fast API</h5>
                         <div class="progress">
-                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
                     <div id="skill-06" class="mb-3">
-                        <h5>Python</h5>
+                        <h5>Data Analysis</h5>
                         <div class="progress ">
                             <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
                     <div id="skill-07" class="mb-3">
-                        <h5>Python</h5>
+                        <h5>Machine Learning</h5>
                         <div class="progress ">
-                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar w-25" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
+                    <div id="skill-07" class="mb-3">
+                        <h5>Deep Learning</h5>
+                        <div class="progress ">
+                            <div class="progress-bar w-25" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+
                     <div id="skill-08">
-                        <h5>Python</h5>
+                        <h5>Computer Vision</h5>
                         <div class="progress">
-                            <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar w-50" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
 
@@ -201,6 +217,7 @@
            
         </Section>
          <!-- === END Skill PART === -->
+
 
          <!-- ==== Start EDUCATION and Experience ======= -->
          <section class="career container">
@@ -299,7 +316,212 @@
                 </div>
             </div>
          </section>
+         <!-- ==== Education and Experience ===== -->
 
+
+         <!-- =========== WHAT WE OFFER ========== -->
+        <div class='py-2'>
+         <section class="container my-5 ">
+            <p class="text-center mb-0 text-secondary">Services</p>
+            <h2 class="text-center "> What I <span class="text-info">Offer</span></h2>
+            <div class="d-flex flex-wrap justify-content-around">
+
+                
+
+                <!-- ====One==== -->
+                <div class="w-25 border border-info rounded px-4 mx-2 my-5 service-card">   
+                    
+                    <div class="d-flex justify-content-between pt-3">
+                        <i class='bx bxl-python text-grey icon-size-3 pt-1 text-hover'></i>
+                        <h1 class='services-card-No'>01</h2>
+                    </div>
+                    <h4>Web Development</h4>
+                    <p class="text-secondary text-hover">Lorem ipsum, dolor sit amet cons adipisicing elit. Asperiores, quisquam modi assumenda illum aut harum</p>
+                </div>
+
+                 <!-- ====TWO==== -->
+                 <div class="w-25 border border-info rounded px-4 mx-2 my-5 service-card">   
+                    
+                    <div class="d-flex justify-content-between pt-3">
+                        <i class='bx bxl-python text-grey icon-size-3 pt-1 text-hover'></i>
+                        <h1 class='services-card-No'>02</h2>
+                    </div>
+                    <h4>Web Development</h4>
+                    <p class="text-secondary text-hover">Lorem ipsum, dolor sit amet cons adipisicing elit. Asperiores, quisquam modi assumenda illum aut harum</p>
+                </div>
+
+                 <!-- ====Three==== -->
+                 <div class="w-25 border border-info rounded px-4 mx-2 my-5 service-card">   
+                    
+                    <div class="d-flex justify-content-between pt-3">
+                        <i class='bx bxl-python text-grey icon-size-3 pt-1 text-hover'></i>
+                        <h1 class='services-card-No'>03</h2>
+                    </div>
+                    <h4>Web Development</h4>
+                    <p class="text-secondary text-hover">Lorem ipsum, dolor sit amet cons adipisicing elit. Asperiores, quisquam modi assumenda illum aut harum</p>
+                </div>
+
+                 <!-- ====FOUR==== -->
+                 <div class="w-25 border border-info rounded px-4 mx-2 my-5 service-card">   
+                    
+                    <div class="d-flex justify-content-between pt-3">
+                        <i class='bx bxl-python text-grey icon-size-3 pt-1 text-hover'></i>
+                        <h1 class='services-card-No'>04</h2>
+                    </div>
+                    <h4>Web Development</h4>
+                    <p class="text-secondary text-hover">Lorem ipsum, dolor sit amet cons adipisicing elit. Asperiores, quisquam modi assumenda illum aut harum</p>
+                </div>
+
+
+                 <!-- ====FIVE==== -->
+                 <div class="w-25 border border-info rounded px-4 mx-2 my-5 service-card">   
+                    
+                    <div class="d-flex justify-content-between pt-3">
+                        <i class='bx bxl-python text-grey icon-size-3 pt-1 text-hover'></i>
+                        <h1 class='services-card-No'>05</h2>
+                    </div>
+                    <h4>Web Development</h4>
+                    <p class="text-secondary text-hover">Lorem ipsum, dolor sit amet cons adipisicing elit. Asperiores, quisquam modi assumenda illum aut harum</p>
+                </div>
+
+                 <!-- ====SIX==== -->
+                 <div class="w-25 border border-info rounded px-4 mx-2 my-5 service-card">   
+                    
+                    <div class="d-flex justify-content-between pt-3">
+                        <i class='bx bxl-python text-grey icon-size-3 pt-1 text-hover'></i>
+                        <h1 class='services-card-No'>06</h2>
+                    </div>
+                    <h4>Web Development</h4>
+                    <p class="text-secondary text-hover">Lorem ipsum, dolor sit amet cons adipisicing elit. Asperiores, quisquam modi assumenda illum aut harum</p>
+                </div>
+                
+            </div>
+         </section>
+        </div>
+
+        
+        <!-- ===== Contact Us SECTION ======= -->
+        <section class="contact-us text-light py-5">
+            <p class="text-center mb-0 text-secondary"><small>GET IN TOUCH</small></p>
+            <h3 class="text-center mt-0">Contact <span class="text-info"> me</span>.</h3>
+            <div class="d-flex justify-content-center my-4">
+                <p class="text-center w-50 lead text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, perferendis quas animi quo porro rerum!
+                </p>
+            </div>
+
+            <div class="contact-section mb-5">
+                <div class="contact-section-inner d-flex p-5">
+                    <!-- Left Part -->
+                    <div class="w-50">
+                        <p class="lead mb-0">Have Project Idea?</p>
+                        <h5 class="text-info">Lets Discuss!</h5>
+                        
+                        <!-- Contact-details -->
+                        <div class="mt-5 text-info">
+                            <!-- Number -->
+                            <div class="d-flex mb-4">
+                                <div class="bg-light text-dark circle d-flex justify-content-center me-2 p-1">
+                                    <i class='bx bxs-phone p-0 m-0'></i>
+                                </div>
+                                <p class="mb-0">+92-309-4644191</p>
+                            </div>
+                            <!-- Email -->
+                            <div class="d-flex mb-4">
+                                <div class="bg-light text-dark circle d-flex justify-content-center me-2 p-1">
+                                    <i class='bx bx-envelope p-0 m-0'></i>
+                                </div>
+                                <p class="mb-0">HassanMahmudAwan@gmail.com</p>
+                            </div>
+
+                            <div class="d-flex">
+                                <div class="bg-light text-dark circle d-flex justify-content-center me-2 p-1">
+                                    <i class='bx bx-map'></i>
+                                </div>
+                                <p>Lahore, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Part -->
+                    <div class="w-50">
+                        <form>
+
+                            <div class="form-group mb-3">
+                                <label for="exampleFormControlInput1" class="mb-1">Full Name</label>
+                                <input type="text" class="form-control bg-dark custom-placeholder-color text-light" id="exampleFormControlInput1" placeholder="Enter name">
+                              </div>
+
+                            <div class="form-group mb-3">
+                              <label for="exampleFormControlInput1" class="mb-1">Email address</label>
+                              <input type="email" class="form-control bg-dark custom-placeholder-color text-light" id="exampleFormControlInput1" placeholder="Enter email">
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="exampleFormControlTextarea1" class="mb-1">Message</label>
+                                <textarea class="form-control bg-dark custom-placeholder-color text-light" id="exampleFormControlTextarea1" rows="4" placeholder="Enter Message"></textarea>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-info">Send Message <i class='bx bx-chat '></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </section>
+        <!-- ======= END OF CONTACT US SECTION ======== -->
+
+
+        <!-- ======= Footer Section ====== -->
+        <Section id="Footer" class="pt-5">
+            <div class="d-flex justify-content-center">
+            <div class="Footer-main d-flex justify-content-between mb-2">
+                <div>
+                    <h4 class="m-0"><span class="text-info">Hassan</span> Mahmood</h4>
+                    <p class="my-0 text-info"><small>Software Engineer</small></p>
+
+                    <div class='mt-5'>
+                        <p class="mb-0 p-2 text-grey">Follow me</p>
+                        <div class="d-flex">
+                            <!-- ==Linkedin== -->
+                            <div class="dark-mode d-flex align-items-center justify-content-center border border-info mx-2">
+                                <i class='bx bxl-linkedin text-primary icon-size-small'></i>
+                            </div>
+
+                            <!-- ==GitHub== -->
+                            <div class="dark-mode d-flex align-items-center justify-content-center border border-info me-2">
+                                <i class='bx bxl-github text-primary icon-size-small'></i>
+                              
+                            </div>
+
+                            <!-- ==Instagram== -->
+                            <div class="dark-mode d-flex align-items-center justify-content-center border border-info me-2">
+                                <i class='bx bxl-instagram text-primary icon-size-small'></i>
+                                
+                            </div>
+
+                            <!-- ==Twitter== -->
+                            <div class="dark-mode d-flex align-items-center justify-content-center border border-info me-2">
+                                <i class='bx bxl-twitter text-primary icon-size-small'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>hello</div>
+                <div>hello</div>
+            </div>
+            </div>
+
+            <!-- <div class="bg-info pt-1 mt-2"></div> -->
+            <hr class="mt-3 mb-0 border border-2 border-info">
+            <p class="mt-2 text-center text-grey">CopyRight @ <span class="text-info">Hassan Mahmood</span></p>
+
+        </Section>
+
+        <!--========== END OF FOOTER SECTION ========= -->
 
          
 

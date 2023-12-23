@@ -1,6 +1,20 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+
+/* .color-Scheme{
+    BG: #131313
+    Text-main: #f0f0f1;
+    Text-Secondary: rgb(171, 170, 170);
+    Text-p: text-secondary;
+    Text-heading: Text-info
+
+    Skill-bg: #1e293b;
+
+} */
+
 
 
 
@@ -10,20 +24,46 @@
 }
 
 /* ===== GLOBAL CLASSES ====== */
+body{
+    /* background-color:#1e293b !important; */
+    background-color:#131313 !important;
+    color: #f0f0f1 !important;
+    /* font-family: 'Poppins', sans-serif !important; */
+    font-family: 'Source Code Pro', monospace !important;
+}
+
 li{
     list-style: none;
 }
-
-body{
-    background-color: #f0f0f1;
-    color: #1e293b;
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    font-family: 'Poppins', sans-serif;
-}
-.active{
-    font-weight: bold;
+a, li a {
+    text-decoration: none;
+    color: #f0f0f1;
 }
 
+.bg-grey{
+    background-color:#1d1d1d !important;
+}
+
+.circle{
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+}
+.icon-size-small{
+    font-size: 19px;
+}
+.icon-size{
+    font-size: 24px;
+}.icon-size-3{
+    font-size: 36px !important;
+}.icon-setting{
+    position: relative;
+    top: 4px;
+    margin-right: 2px;}
+
+.text-grey{
+    color: rgb(171, 170, 170);
+}
 
 
 
@@ -33,76 +73,39 @@ body{
 
 /* === NAVBAR === */
 .Navbar {
-    background-color: #f0f0f1;
-    color: #1e293b;
+    width: 100%;
+    background-color:  #1d1d1d;
     height: 65px;
     padding: 5px 20px;
 
     position: sticky;
     top: 0;
-    opacity: 80%;
-
-    box-shadow: 1px 1px 10px 1px #d8d8d8;
-
-}.Navbar:hover{
-    opacity: 100%;
 }
 
-/* NAVBAR: == LOGO == */
-.logo-container{
-    width: 170px;
-    height: 50px;
-}
-.logo-heading{
-    padding-top: 3px;
-    height: 40px;
-}
-
-/* NAVBAR: == LIST == */
-.nav-list ul li{
-    padding: 0 10px 0 10px;
-}
-
-
-/* NAVBAR: == Chat and Dark == */
+/* == NAVBAR: Dark Mode == */
 .dark-mode{
-    background-color: #3d70c1;
-    opacity: 60%;
     border-radius: 100%;
     width: 30px;
     height: 30px;
+}.dark-mode:hover{
+    box-shadow: 1px 1px 2px 1px #012e87;
+    width: 31px;
+    height: 31px;
+}
 
-}
-.dark-mode:hover{
-    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
-}
-.dark-mode-icon{
-    color: black;
-    font-size: 18px;
-}
 
 
 
 /*  ========== HERO SECTION ============ */
 .hero{
     padding-top: 30px;
-    margin-bottom: 30px;
-    background-color: #e4e6e6;
+    margin-bottom: 75px;
 }
-.hero .left-part{
+.hero .left-margin{
     margin-top: 50px;
-    min-width: 50%;
-}
-.hero .left-part h3{
-    color: #00c6ff;
 }
 
-.hero .right-part{
-    min-width: 50%;
-}
-.bxs-down-arrow-circle{
-    font-size: 20px;
-}
+
 
 
 
@@ -110,13 +113,9 @@ body{
 
 /* ================= SKILL SECTION ================ */
 .skill{
-    background-color: #f2f4ff;
-    height: 440px;
-    box-shadow: 1px 1px 10px 1px #d8d8d8;
-
-}
-.skill div p{
-    color: #00c6ff;
+    background-color: #1e293b;
+    height: 530px;
+    box-shadow: 0px 1px 3px 1px #1e293b;
 }
 .skill .left-skill,
 .skill .right-skill{
@@ -135,18 +134,17 @@ body{
 #about-container{
     width:65%;
 }
-#right-side_aboutme{
-    width: 60%
-}
-#right-side_aboutme .intro-p{
-    color: #00c6ff;
-}
 .image{
     border-top: 2px solid blue;
     border-bottom: 2px solid blue;
     padding: 15px;
-    /* box-shadow: 1px 1px 10px 1px rgb(237, 249, 253) */
 }
+
+#right-side_aboutme{
+    width: 60%
+}
+
+
 
 
 
@@ -164,7 +162,7 @@ body{
 }#edu-heading{
     width: 34%;
 }
-.bxs-briefcase, .bxs-book-reader{
+.bxs-briefcase, .bxs-book-reader, .bxl-python{
     font-size: 24px;
 }
 
@@ -173,3 +171,104 @@ body{
 .checker{
     height: 300px;
 }
+
+
+
+/* ======== OFFERING SECTION ======== */
+.border-style{
+    border-radius: 10px 50px 10px 10px;
+    position: relative;
+}.border-style p{
+    color: gray;
+}
+
+.border-style:hover{
+    background-color: #0d6efd;
+    color: #f0f0f1 !important;
+    top: -3px;
+    left: -3px;
+    /* box-shadow: 1px 1px 3px 3px #2f2f2f; */
+
+}
+.border-style:hover p{
+    color: #dbdbdb !important;
+}
+
+.card-icon{
+    top: -18px;
+    left: -32px;
+    width: 30%;
+    background-color: #0d6efd;
+    color: #f0f0f1;
+
+
+
+}.card-icon i{
+    font-size: 34px;
+}
+
+
+
+.border-style:hover .card-icon{
+    color: #0d6efd;
+    background-color: #fff;
+}
+
+.service-card{
+    background-color: #1d1d1d;
+}.services-card-No{
+    color: #434343;
+    opacity: 35%;
+}
+.service-card:hover{
+    background-color: #02b2a1;
+    border: 1px solid #02b2a1 !important;
+    color:#1e293b !important;
+}
+.service-card:hover .text-hover{
+    color: #2e2e2e !important;
+}
+
+
+
+
+
+/* ======== CONTACT US SECTION ======== */
+.contact-us{
+   background-color: #131313;
+   height: 800px;
+}
+.contact-section{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.contact-section-inner{
+    background-color: #1d1d1d;
+    height: 460px;
+    width: 65%;
+    border-radius: 10px;
+}
+
+
+.custom-placeholder-color::placeholder {
+    color: grey !important;
+}
+
+
+
+/* ======= FOOTER SECTION ========= */
+#Footer{
+    background-color: #1d1d1d;
+    height: 290px;
+    width: 100%;
+}
+.Footer-main{
+    width: 80%;
+}
+/* ======= END FOOTER SECTION ========= */
+
+
+
+
