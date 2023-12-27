@@ -205,6 +205,8 @@ a, li a {
 
 
 
+
+
 .border-style:hover .card-icon{
     color: #0d6efd;
     background-color: #fff;
@@ -225,7 +227,9 @@ a, li a {
     color: #2e2e2e !important;
 }
 
-
+.offer-container-width{
+    width: 285px;
+}
 
 
 
