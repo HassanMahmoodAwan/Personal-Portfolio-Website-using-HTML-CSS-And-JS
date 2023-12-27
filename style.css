@@ -156,9 +156,18 @@ a, li a {
     width: 100%;
 }
 #edu-list, #exp-list{
-    width: 65%;
+    width: 70%;
 }
-
+.hr-width{
+    width: 18%;
+    padding-top:0.7px;
+}
+.list-width-large{
+    width:300px;
+}
+.list-width-small{
+    width:200px;
+}
 
 
 /* ======== OFFERING SECTION ======== */
