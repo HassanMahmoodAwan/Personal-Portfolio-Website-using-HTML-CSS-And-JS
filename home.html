@@ -28,9 +28,11 @@
 
 <body>
     <div class="Container">
+        
+
 
         <!-- === Navbar SECTION === -->
-        <section class="Navbar d-flex justify-content-between">
+        <section class="Navbar navbar  navbar-dark bg-dark d-flex justify-content-between ">
             
             <!-- === LOGO & Title === -->
             <div class="h-100 d-flex align-items-center justify-content-between">
@@ -39,8 +41,8 @@
             </div>
 
             <!-- === NAV List -->
-            <div>
-                <ul class="d-flex align-items-center h-100">
+            <div id="Nav-list">
+                <ul class="d-flex align-items-center h-100 mb-0 ps-0">
                     <li class="px-3"><a href="#" class="text-info">About me</a></li>
                     <li class="px-3"><a href="#">Skills</a></li>
                     <li class="px-3"><a href="#">Projects</a></li>
@@ -50,7 +52,7 @@
             </div>        
     
            <!--  Dark Button with chat button -->
-            <div class="d-flex align-items-center">
+            <div id="side-Buttons" class="d-flex align-items-center">
                 <!-- <div id='dark-mode' class="d-flex align-items-center justify-content-center bg-info icon-circle-large">
                     <i class='bx bxs-moon text-dark icon-size-small'></i>
                 </div> -->
@@ -58,26 +60,39 @@
                         <i class='bx bxl-whatsapp text-sucess icon-size-large icon-setting'></i>Chat with me
                 </button>      
             </div>
+
+            <button id="Hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            
         </section>
         <!-- === End Navbar === -->
 
+
+
         <!-- ======= HERO SECTION ======== -->       
         <section id="Hero" class="d-flex container section-space-small">
-            <!-- == Left Part -->
-            <div class="w-50 left-margin">
+            
+            <!-- == Left Part == -->
+            <div id="Hero-lefthand" class="w-50">
                 <h6 class="text-info">Hi, I am</h6>
                 <h1>Hassan Mahmood</h1>
                 <h5 class="text-grey">Full stack Developer !</h5>
                 <p class="mt-5 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum eius id vitae, ratione facilis accusantium temporibus ullam totam ipsam, rem veritatis possimus! Explicabo quibusdam assumenda impedit illo animi reiciendis repudiandae.</p>
-
-                <button class="btn btn-primary rounded-pill pt-1">
-                    <i class='bx bxs-down-arrow-circle text-info icon-size-small icon-setting'></i>Resume</button>
-                <button class="btn btn-outline-primary rounded-pill"> Contact Me </button>
+                
+                <!-- == Buttons == -->
+                <div>
+                    <button class="btn btn-primary rounded-pill pt-1">
+                        <i class='bx bxs-down-arrow-circle text-info icon-size-small icon-setting'></i>Resume</button>
+                    <button class="btn btn-outline-primary rounded-pill"> Contact Me </button>
+                </div>
+                
             </div>
 
             <!-- === RIGHT PART === -->
-            <div class="d-flex justify-content-end w-50">
-                <img src="./public/Hero Section 03.png" alt="Hassan Image" width="400" height="320" class=" mt-5 pt-3">
+            <div id="Hero-righthand"  class="d-flex justify-content-end w-50 px-4">
+                <img src="./public/Hero Section 03.png" alt="Hassan Image" width="400" height="320" class="pt-5 ">
             </div>
         </section>
         <!-- ======= END HERO SECTION ======== -->

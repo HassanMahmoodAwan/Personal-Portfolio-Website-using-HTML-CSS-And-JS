@@ -32,6 +32,8 @@ body{
     background-color:#131313 !important;
     color: #f0f0f1 !important;
     font-family: 'Source Code Pro', monospace !important;
+    width: 100%;
+    height: 100%;
 }
 li{
     list-style: none;
@@ -84,10 +86,10 @@ a, li a {
 
 /* === NAVBAR === */
 .Navbar {
-    width: 100%;
+    width: 100% !important; 
     background-color:  #1d1d1d;
-    height: 65px;
-    padding: 5px 20px;
+    height: 65px !important;
+    padding: 5px 20px !important;
 
     position: sticky;
     top: 0;
@@ -98,20 +100,32 @@ a, li a {
     width: 31px;
     height: 31px;
 }
+#Hamburger{
+    display: none;
+}
 
-
-
-
-/*  ========== HERO SECTION ============ */
-
-.hero .left-margin{
-    margin-top: 50px;
+@media screen and (max-width:950px) {
+    #Nav-list, #side-Buttons{
+        display: none !important;
+    }
+    #Hamburger{
+        display: block;
+    }
 }
 
 
-
-
-
+/*  ========== HERO SECTION ============ */
+@media screen and (max-width: 768px){
+    #Hero-righthand{
+        display: none !important;
+    }
+    #Hero-lefthand{
+        width: 100% !important;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 /* ================= SKILL SECTION ================ */
