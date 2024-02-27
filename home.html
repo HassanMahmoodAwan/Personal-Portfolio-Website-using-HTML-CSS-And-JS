@@ -30,14 +30,13 @@
     <div class="Container">
         
 
-
         <!-- === Navbar SECTION === -->
-        <section class="Navbar navbar  navbar-dark bg-dark d-flex justify-content-between ">
+        <section class="customNavbar navbar  navbar-dark  bg-grey-g d-flex justify-content-between ">
             
             <!-- === LOGO & Title === -->
-            <div class="h-100 d-flex align-items-center justify-content-between">
-                    <i class="fa-brands fa-houzz text-info icon-size-large"></i>
-                    <h3 class="ms-2 mb-0 pt-1">Hassan.<span class="text-info mx-0">M</span></h3>
+            <div class="h-100 d-flex align-items-center">
+                    <i class="fa-brands fa-houzz text-info icon-size-large-g"></i>
+                    <h3 class="ms-2 mb-0 ">Hassan.<span class="text-info mx-0">M</span></h3>
             </div>
 
             <!-- === NAV List -->
@@ -48,23 +47,16 @@
                     <li class="px-3"><a href="#">Projects</a></li>
                     <li class="px-3"><a href="#">Services</a></li>
                     <li class="px-3"><a href="#">Contact me</a></li>
-                 </ul>           
+                </ul>           
             </div>        
     
-           <!--  Dark Button with chat button -->
-            <div id="side-Buttons" class="d-flex align-items-center">
-                <!-- <div id='dark-mode' class="d-flex align-items-center justify-content-center bg-info icon-circle-large">
-                    <i class='bx bxs-moon text-dark icon-size-small'></i>
-                </div> -->
-                <button class="btn btn-outline-success mx-3 pt-0">
-                        <i class='bx bxl-whatsapp text-sucess icon-size-large icon-setting'></i>Chat with me
-                </button>      
-            </div>
+            <!-- WhatsApp chat button -->
+            <button id="whatappButton" class="btn btn-outline-success mx-3 pt-0">
+                    <i class='bx bxl-whatsapp icon-size-large-g icon-setting-g'></i>Chat with me
+            </button>      
 
-            <button id="Hamburger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
+            <!-- Hamburger Menu -->
+            <div id="Hamburger">&#8801;</div>
             
         </section>
         <!-- === End Navbar === -->
@@ -72,22 +64,21 @@
 
 
         <!-- ======= HERO SECTION ======== -->       
-        <section id="Hero" class="d-flex container section-space-small">
+        <section id="Hero" class="d-flex container section-space-small-g">
             
             <!-- == Left Part == -->
             <div id="Hero-lefthand" class="w-50">
                 <h6 class="text-info">Hi, I am</h6>
                 <h1>Hassan Mahmood</h1>
                 <h5 class="text-grey">Full stack Developer !</h5>
-                <p class="mt-5 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum eius id vitae, ratione facilis accusantium temporibus ullam totam ipsam, rem veritatis possimus! Explicabo quibusdam assumenda impedit illo animi reiciendis repudiandae.</p>
+                <p class="mt-5 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum eius id vitae, ratione facilis accusantium temporibus ullam totam ipsam, rem veritatis possimus! Lorem ipsum dolor.</p>
                 
                 <!-- == Buttons == -->
-                <div>
-                    <button class="btn btn-primary rounded-pill pt-1">
-                        <i class='bx bxs-down-arrow-circle text-info icon-size-small icon-setting'></i>Resume</button>
+                <div class="pt-1">
+                    <button class="btn btn-primary rounded-pill">
+                        <i class='bx bxs-down-arrow-circle text-info icon-size-small-g icon-setting-g'></i>Resume</button>
                     <button class="btn btn-outline-primary rounded-pill"> Contact Me </button>
-                </div>
-                
+                </div>  
             </div>
 
             <!-- === RIGHT PART === -->
@@ -136,7 +127,7 @@
 
 
         <!-- ======= Skill SECTION ======== -->
-        <section class="skill container rounded-4 py-5">
+        <section class="skill container rounded-4 py-5 section-space-small">
             
             <div class="text-center">
                 <p class="mb-0 text-info">Why Choose me</p>
@@ -227,7 +218,7 @@
                 </div>
                 <!-- == END OF RIGHT SIDE == -->
             </div>
-           
+
         </section>
         <!-- === END Skill PART === -->
 
